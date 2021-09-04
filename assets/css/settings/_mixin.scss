@@ -1,0 +1,33 @@
+/* Start Mixin */
+
+@mixin breakpointminmax($sizemin, $sizemax) {
+    @media (min-width: $sizemin + px) and (max-width: $sizemax + px) {
+        @content;
+    }
+}
+
+@mixin breakpoint($size) {
+    @media only screen and (max-width: $size + px) {
+        @content;
+    }
+}
+
+@mixin min-breakpoint($size) {
+    @media only screen and (min-width: $size + px) {
+        @content;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+/* End Mixin */

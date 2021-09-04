@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+//====== Start Reset CSS ====
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    //color of scollbar
+    &::-webkit-scrollbar-thumb {
+        background: $red;
+        border-radius: 10px;
+    }
+    // background color of scollbar
+    &::-webkit-scrollbar-track {
+        background: #000;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+    background: #f4f4f4;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    //hover vào nó để thấy transition chạy
+    transition: all 0.3s ease;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+// .wrapper {
+//     overflow: hidden;
+// }
+// .overflow-hidden {
+//     overflow: hidden;
+// }
+// End Reset CSS

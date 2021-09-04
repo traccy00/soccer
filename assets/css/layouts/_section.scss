@@ -1,0 +1,63 @@
+// Start Section
+.section {
+    padding: 80px 0;
+    &.background {
+        background: url(../images/home/section-background.jpg) no-repeat center;
+        background-size: cover;
+        .section {
+            &__title {
+                &-name {
+                    color: $red;
+                }
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+        &-name {
+            font-size: 36px;
+            color: #000;
+            line-height: 40px;
+            font-family: $font-bebas-neue;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        &-border {
+            border-top: 1px solid $red;
+            width: 200px;
+            margin: 0 auto;
+            padding-top: 8px;
+            &::before {
+                content: '';
+                border-top: 3px solid $red;
+                width: 200px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    &__button {
+        margin: 50px 0 0;
+        text-align: center;
+        a {
+            padding: 15px 20px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #fff;
+            font-size: 18px;
+            display: inline-block;
+            border-radius: 2px;
+            background-color: $red;
+            background: linear-gradient(to bottom, #f00 0%, #c92127 100%);
+            transition: unset;
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// End Section

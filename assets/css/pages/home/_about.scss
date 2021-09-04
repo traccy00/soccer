@@ -1,0 +1,144 @@
+.about {
+    &__item {
+        position: relative;
+        &-content {
+            position: absolute;
+            width: 100%;
+            top: 277px;
+            left: 0;
+            .content {
+                &__name {
+                    margin: 0 21px 10px 21px;
+                    padding: 15px 22px 7px 22px;
+                    background: rgba(255, 255, 255, 0.8);
+                    .category {
+                        font-style: italic;
+                    }
+                }
+                &__button {
+                    width: fit-content;
+                    background: $red;
+                    color: #fff;
+                    margin: 0 21px;
+                    padding: 15px 21px;
+                    font-size: 1.2rem;
+                    i {
+                        padding-right: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .col-md-8 {
+        padding: 0;
+        background-image: url('../images/home/about-background.jpg');
+        background-size: cover;
+        // background-position: top center;
+        background-repeat: no-repeat;
+    }
+    &__tabs {
+        .nav-tabs {
+            li {
+                margin-bottom: -1px;
+                width: 33.3333%;
+                @include breakpoint(767) {
+                    width: 100%;
+                }
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    margin-right: -1px;
+                    line-height: 1.42857143;
+                    border: 1px solid #ddd;
+                    background: #f4f4f4;
+                    border-radius: 0px 0px 0 0;
+                    text-align: center;
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 14px;
+                    &:hover {
+                        background-color: #e5e5e5;
+                    }
+                    &.active {
+                        color: #fff;
+                        cursor: default;
+                        background-color: #f00;
+                        border: 1px solid #ddd;
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
+            //   display: table;
+            //   width: 100%;
+            //   table-layout: fixed;
+            //   li {
+            //     display: table-cell;
+            //     width: 100%;
+            //     text-align: center;
+            //     border: 1px solid #e7e7e7;
+            //     background: #f4f4f4;
+            //     &:hover {
+            //       background: #e7e7e7;
+            //     }
+            //     a {
+            //       font-size: 0.9rem;
+            //       font-weight: bolder;
+            //       color: #000;
+            //       padding: 12px 50px;
+            //     }
+            //   }
+        }
+        .tab-content {
+            background: #f4f4f4;
+            margin: 20px;
+            table {
+                thead {
+                    tr {
+                        background-color: #000;
+                        color: #fff;
+                        td {
+                            padding: 14px 25px;
+                            border-top: 0;
+                            white-space: nowrap;
+                            &.w50 {
+                                width: 50%;
+                            }
+                            &.w10 {
+                                width: 10%;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        &:nth-of-type(odd) {
+                            background-color: #f4f4f4;
+                        }
+                        &:nth-of-type(even) {
+                            background-color: #e7e7e7;
+                        }
+                        td {
+                            padding: 14px 25px;
+                            border-top: 0;
+                            white-space: nowrap;
+                            &.w40 {
+                                width: 40%;
+                            }
+                            .match {
+                                &-date {
+                                    font-style: italic;
+                                }
+                                &-title {
+                                    font-weight: 700;
+                                    &.red {
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

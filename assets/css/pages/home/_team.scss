@@ -1,0 +1,43 @@
+.player {
+    margin: 0 130px;
+    &__item {
+        margin-right: 30px;
+        &-content {
+            border-top: 2px solid red;
+            background: #000;
+            padding: 25px 20px;
+            .content {
+                &__name {
+                    color: $red;
+                    font-size: 1.2rem;
+                    margin-bottom: 25px;
+                }
+                &__position {
+                    color: #999;
+                    font-style: italic;
+                    span {
+                        margin-right: 10px;
+                        padding: 10px 12px;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: bolder;
+                        color: #fff;
+                        border-radius: 5px;
+                        &.cf {
+                            background: red;
+                        }
+                        &.gk {
+                            background: #f9c023;
+                        }
+                        &.cb {
+                            background: #1e8cc8;
+                        }
+                        &.rmf {
+                            background: #2c973d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

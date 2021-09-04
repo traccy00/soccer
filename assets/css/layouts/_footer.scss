@@ -1,0 +1,118 @@
+.footer {
+    background: #252525;
+    padding-top: 73px;
+    color: #999;
+    .item {
+        &__title {
+            font-size: 18px;
+            color: #fff;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 45px;
+            font-weight: bolder;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                display: block;
+                border-bottom: 2px solid #f00;
+                width: 50px;
+            }
+        }
+        &__social {
+            display: flex;
+            margin: 20px 0 70px 0;
+            color: #fff;
+            a {
+                display: inline-table;
+                text-align: center;
+                border: 1px solid #fff;
+                width: 30px;
+                height: 30px;
+                margin-right: 2px;
+                border-radius: 50%;
+                padding-top: 5px;
+            }
+        }
+        &__blog {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            &-icon {
+                top: 3px;
+                position: absolute;
+                left: 0;
+                text-align: center;
+                font-size: 10px;
+                color: $red;
+            }
+            &-title {
+                display: block;
+                &:hover {
+                    color: white;
+                }
+            }
+            &-date {
+                font-size: 12px;
+                line-height: 17px;
+                color: #f00;
+                margin-top: 5px;
+            }
+        }
+        &__list {
+            column-count: 2;
+            li {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 6px 0 6px 20px;
+                i {
+                    position: absolute;
+                    left: 0;
+                    text-align: center;
+                    font-size: 10px;
+                    color: $red;
+                }
+                a {
+                    display: block;
+                    color: #999;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &__form {
+            .form-control {
+                border-radius: 0 !important;
+                font-size: 14px !important;
+            }
+            input {
+                &:focus {
+                    background: #000;
+                    color: #fff;
+                }
+            }
+            button {
+                cursor: pointer;
+                color: #fff;
+                font-weight: bolder;
+                background: red;
+                padding: 7px 38px;
+                font-size: 14px;
+                border-radius: 3px;
+                border: none;
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+    }
+    &Bottom {
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+}

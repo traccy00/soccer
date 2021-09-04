@@ -1,0 +1,98 @@
+// Start Match
+// .match {
+//     background-image: url('../images/home/match-background.jpg');
+//     background-position: center center;
+//     background-size: cover;
+//     height: 375px;
+//     width: 100%;
+//     &__club {
+//         text-align: center;
+//         &-img {
+//             margin-top: 80px;
+//             width: 150px;
+//         }
+//     }
+// }
+
+/* Start Match */
+
+.match {
+    background: url(../images/home/match-background.jpg) no-repeat center center;
+    background-size: cover;
+    &__overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: block;
+        padding: 80px 0;
+        @include breakpoint(767) {
+            padding: 80px 0 50px;
+        }
+    }
+    &__club {
+        text-align: center;
+        margin-bottom: 40px;
+        @include breakpoint(767) {
+            margin-bottom: 0;
+        }
+        img {
+            margin: auto;
+            width: 150px;
+        }
+        &-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f00;
+            margin-top: 5px;
+        }
+        &-vs {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f00;
+            margin: 30px 0;
+            @include min-breakpoint(768) {
+                display: none;
+            }
+        }
+    }
+    &__description {
+        text-align: center;
+        text-transform: uppercase;
+        &-tournaments {
+            font-size: 40px;
+            font-weight: 700;
+            color: #f00;
+            margin-bottom: 10px;
+            margin-top: -30px;
+            line-height: 30px;
+        }
+        &-date {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f00;
+            margin-bottom: 40px;
+            @include breakpoint(767) {
+                margin-bottom: 30px;
+            }
+        }
+        &-vs {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f00;
+            margin-bottom: 40px;
+            @include breakpoint(767) {
+                display: none;
+            }
+        }
+        &-location {
+            font-size: 14px;
+            color: #fff;
+            @include breakpoint(767) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+
+/* End Match */
+
+// End Match
